@@ -1,71 +1,124 @@
-# Getting Started with Create React App
+## Contacts and Appointments Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application designed to manage contacts and appointments. It consists of two main pages: one for managing contacts and another for managing appointments.
 
-## Available Scripts
+**Component Diagram**
 
-In the project directory, you can run:
+markdown
+Copy code
+App
+├── ContactsPage
+│   ├── ContactForm
+│   └── TileList
+└── AppointmentsPage
+    ├── AppointmentForm
+    └── TileList
 
-### `npm start`
+    
+**Components**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**ContactsPage**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**ContactForm:** Allows adding new contacts.
 
-### `npm test`
+**TileList:** Displays a list of contacts using Tile components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**AppointmentsPage**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**AppointmentForm:** Allows adding new appointments, selecting contacts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**TileList:** Displays a list of appointments using Tile components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Functionality**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**ContactsPage:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add new contacts.
+Display a list of contacts.
+Prevent duplicate names.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**AppointmentsPage:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add new appointments, select contacts.
+Display a list of appointments.
+Form validation and submission handling.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Technologies Used**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React
 
-### Code Splitting
+React Hooks (useState, useEffect)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+JavaScript (ES6+)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Installation and Setup**
 
-### Making a Progressive Web App
+Clone the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install dependencies using npm install.
 
-### Advanced Configuration
+Start the development server using npm start.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+**Project Structure**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+css
 
-### `npm run build` fails to minify
+Copy code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# appointment-planner
+src/
+├── components/
+
+│   ├── contactForm/
+
+│   ├── appointmentForm/
+
+│   ├── contactPicker/
+
+│   ├── tile/
+
+│   └── tileList/
+
+
+├── containers/
+
+│   ├── contactsPage/
+
+│   └── appointmentsPage/
+
+└── utils/
+
+    └── helpers.js
+
+    
+**Usage**
+
+Navigate to ContactsPage to manage contacts.
+
+Navigate to AppointmentsPage to manage appointments.
+
+Fill out forms to add new contacts or appointments.
+
+View lists of contacts and appointments.
+
+
+**Future Improvements**
+
+Implement search and filtering functionality.
+
+Add authentication and user-specific data handling.
+
+Enhance UI/UX with additional styling and animations.
+
+
+Feel free to expand upon this template with specific details about your project structure, functionality, and any additional features you plan to implement.
+
+
+
+
+
+
